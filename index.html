@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>HTML Color Demo</title>
+</head>
+<body>
+    <main>
+        <nav>
+            <h1>
+                HTML
+                <span>C</span>
+                <span>o</span>
+                <span>l</span>
+                <span>o</span>
+                <span>r</span>
+                <span>s</span>
+            </h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#named-colors">Named</a></li>
+                <li><a href="#hex-colors">HEX</a></li>
+                <li><a href="#rgb-colors">RGB</a></li>
+                <li><a href="#hsl-colors">HSL</a></li>
+            </ul>
+        </nav>
+        <section id="named-colors">
+            <h1>Named Colors</h1>
+            <div class="shap">
+                <!-- <p>White</p> -->
+            </div>
+            <input type="text" value="white" class="input-named" placeholder="Color name">
+        </section>
+        <section id="hex-colors">
+            <h1>HEX Colors</h1>
+            <div class="shap">
+                <!-- <p>#ffffff</p> -->
+            </div>
+            <input type="text" value="ffffff" maxlength="6" class="input-hex" placeholder="HEX">
+        </section>
+
+        <section id="rgb-colors">
+            <h1>RGB Colors</h1>
+            <div class="shap">
+                <!-- <p>#ffffff</p> -->
+            </div>
+            <p>
+                rgb(
+                    <span class="r-num">255</span>
+                    ,
+                    <span class="g-num">255</span>
+                    ,
+                    <span class="b-num">255</span>
+                    ,
+                    <span class="a-num">1</span>
+                    )</p>
+            <div class="inputs">
+                <input type="range"  value="255" min="0" max="255" class="input-red">
+                <input type="range" value="255" min="0" max="255" class="input-green">
+                <input type="range" value="255" min="0" max="255" class="input-blue">
+                <input type="range" value="1" min="0"  max="1" step=".1" class="input-a">
+
+            </div>
+        </section>
+
+        <section id="hsl-colors">
+            <h1>HSL Colors</h1>
+            <div class="shap">
+                <!-- <p>#ffffff</p> -->
+            </div>
+            <p>
+                hsl(
+                    <span class="h-num">0</span>
+                    ,
+                    <span class="s-num">0</span>%
+                    ,
+                    <span class="l-num">0</span>%
+                    )</p>
+            <div class="inputs">
+                <input type="range"  value="0" min="0" max="360" class="input-h">
+                <input type="range" value="0" min="0" max="100" class="input-s">
+                <input type="range" value="100" min="0" max="100" class="input-l">
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
